@@ -1,0 +1,10 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.columns .Panel__in {
+  display: flex;
+  flex-direction: column;
+}

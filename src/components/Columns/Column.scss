@@ -1,0 +1,38 @@
+.column {
+  // background-color: --vkui--color_background_tertiary;
+
+  box-sizing: border-box;
+  padding-top: 10px;
+}
+
+.columns__list {
+  flex-grow: 1;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.columns__list .vkuiCarouselBase__viewport {
+  flex-grow: 1;
+}
+
+.slide {
+  box-sizing: border-box;
+  padding: 0 12px;
+}
+
+.header__column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.header_button {
+  padding-right: 10px;
+}
+
+.addColumn {
+  padding: 12px 10px;
+  width: 95%;
+}
