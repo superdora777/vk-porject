@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { DeskType } from "../components/Desks/Desks";
+import { DeskType } from "../types/DeskType";
 import { panel } from "../constants";
 import { useNavigate } from "react-router";
 

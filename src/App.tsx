@@ -1,13 +1,14 @@
 import "@vkontakte/vkui/dist/vkui.css";
-import ErrorBoundary from "./components/ErrorBoundary/ErrorBoundary";
-import { AppNav } from "./components/AppNav/AppNav";
+import ErrorBoundary from "./app/components/ErrorBoundary";
+import AppNav from "./app/components/AppNav";
 import { Provider } from "react-redux";
+import { memo } from "react";
 
 interface Props {
   store: any;
 }
 
-export function App({ store }: Props) {
+function App({ store }: Props) {
   //   const dispatch = useDispatch();
   // const navigate = useNavigate();
   // const { desks } = useSelector((state: RootState) => state);
@@ -33,3 +34,5 @@ export function App({ store }: Props) {
     </ErrorBoundary>
   );
 }
+
+export default memo(App);
