@@ -2,13 +2,13 @@ import { initializeApp, getApps, getApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBMY82r-CDnprNaJdCJN44ZtektIQ1v0t8",
-  authDomain: "vk-porject.firebaseapp.com",
-  projectId: "vk-porject",
-  storageBucket: "vk-porject.firebasestorage.app",
-  messagingSenderId: "337047664819",
-  appId: "1:337047664819:web:02473350a9188f9fd318c6",
-  measurementId: "G-8B2Z99E0L3",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 export const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
